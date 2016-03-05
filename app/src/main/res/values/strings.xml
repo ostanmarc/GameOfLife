@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GameOfLife</string>
+
+    <string name="start_playing">Play</string>
+    <string name="pause_playing">Pause</string>
+    <string name="start_fluid_mode">Use Fluid Mode</string>
+    <string name="stop_fluid_mode">Stop Fluid Mode</string>
+</resources>
