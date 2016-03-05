@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.SeekBar;
 
+import com.ostan.gameoflife.Constants;
 import com.ostan.gameoflife.R;
 import com.ostan.gameoflife.mvp.interfaces.GameView;
 import com.ostan.gameoflife.mvp.interfaces.GameViewPresenter;
@@ -27,7 +28,11 @@ public class GameViewFragment extends Fragment implements GameView, TouchCallBac
     private GameViewPresenter presenter;
     private GameBoard gameBoard;
 
-    private boolean[][] gameData;
+    public boolean[][] getGameData() {
+        return gameData;
+    }
+
+    private boolean[][] gameData = new boolean[Constants.GAME_FIELD_SIDE_SIZE][Constants.GAME_FIELD_SIDE_SIZE];
 
     public static final String TAG = "gameFragment";
 

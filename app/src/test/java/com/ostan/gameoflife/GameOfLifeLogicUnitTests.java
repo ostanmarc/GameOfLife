@@ -39,4 +39,7 @@ public class GameOfLifeLogicUnitTests extends TestCase {
         assertEquals("Living cell", true, logic.calculateLogicsForCell(true, 3));
     }
 
+
+
+
 }
